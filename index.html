@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Трекер криптовалют (Лб №2, Варіант 6)</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/rxjs@7.8.1/dist/bundles/rxjs.umd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+<div class="container">
+    <h2>Трекер криптовалют (CoinGecko API)</h2>
+    
+    <div class="controls">
+        <select id="cryptoSelect">
+            <option value="bitcoin">Bitcoin (BTC)</option>
+            <option value="ethereum">Ethereum (ETH)</option>
+            <option value="solana">Solana (SOL)</option>
+            <option value="cardano">Cardano (ADA)</option>
+            <option value="ripple">XRP (XRP)</option>
+            <option value="dogecoin">Dogecoin (DOGE)</option>
+        </select>
+        <button id="addBtn">Додати до відстеження</button>
+        <button id="refreshBtn" class="secondary-btn">Оновити ціни</button>
+    </div>
+
+    <div id="loading" class="loading" style="display: none;">Завантаження даних...</div>
+    <div id="error" class="error"></div>
+
+    <div class="dashboard-grid">
+        <div id="cryptoList" class="crypto-list"></div>
+        <div class="chart-wrapper">
+            <canvas id="priceChart"></canvas>
+        </div>
+    </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>

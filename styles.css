@@ -1,0 +1,123 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background: #f4f4f9;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.controls {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+select, button {
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+select {
+    border: 1px solid #ccc;
+}
+
+button {
+    cursor: pointer;
+    background: #007bff;
+    color: white;
+    border: none;
+    transition: background 0.2s;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+.secondary-btn {
+    background: #6c757d;
+}
+
+.secondary-btn:hover {
+    background: #545b62;
+}
+
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 20px;
+    align-items: start;
+}
+
+@media (max-width: 850px) {
+    .dashboard-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.crypto-card {
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fafafa;
+}
+
+.card-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.chart-btn {
+    background: #28a745;
+    font-size: 14px;
+    padding: 6px 10px;
+}
+
+.chart-btn.active {
+    background: #ffc107;
+    color: #000;
+}
+
+.remove-btn {
+    background: #dc3545;
+    font-size: 14px;
+    padding: 6px 10px;
+}
+
+.remove-btn:hover {
+    background: #b02a37;
+}
+
+.chart-wrapper {
+    background: #fff;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    padding: 15px;
+    min-height: 380px;
+}
+
+.error {
+    color: #dc3545;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.loading {
+    font-style: italic;
+    color: #666;
+    margin-bottom: 10px;
+}
